@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akilesh Kumar S | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP for Parallax and Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer ></script>
+</head>
+<body class="light-theme">
+
+    <div class="cursor-glow"></div>
+
+    <nav>
+        <div class="logo">A<span>K</span>S</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-list">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#certifications" class="nav-link">Certificates</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero parallax-wrapper">
+        <!-- Parallax Background Shapes -->
+        <div class="parallax-layer parallax-shape-1" data-depth="0.1"><i class="fas fa-cube shape"></i></div>
+        <div class="parallax-layer parallax-shape-2" data-depth="-0.2"><i class="fas fa-ring shape"></i></div>
+        <div class="parallax-layer parallax-shape-3" data-depth="0.3"><i class="fas fa-star 3d-star shape"></i></div>
+
+        <div class="hero-container" style="position: relative; z-index: 10;">
+            <div class="hero-content">
+                <span class="status-pill category">UI/UX & Frontend Developer</span>
+                <h1>Akilesh Kumar S</h1>
+                <p class="hero-subtitle gradient-text">Designing the Future of Web</p>
+                <div class="hero-cta">
+                    <a href="Akilesh kumar.S.pdf" download class="resume-btn">
+                        <i class="fas fa-file-pdf"></i> Download Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="PASSPORT_SIZE_PHOTO.png" alt="Akilesh Kumar S">
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section alt-bg">
+        <div class="summary-container slide-up hover-lift" style="padding: 4rem 2rem;">
+            <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"><i class="fas fa-quote-left" style="opacity: 0.2; font-size: 3rem; position: absolute; transform: translate(-20px, -20px);"></i> Summary</h2>
+            <p style="font-size: 1.25rem; line-height: 1.8; font-weight: 500; color: var(--text); position: relative; z-index: 2;">Passionate Web Developer and UI/UX Designer with hands-on experience in building responsive websites using HTML, CSS, and JavaScript, and designing intuitive user interfaces using Figma and Canva. Experienced in research-based projects, front-end development, and creative design.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-grid slide-up">
+            <div class="experience-card hover-lift" style="position: relative; padding-left: 40px; border-left: 4px solid var(--primary); border-radius: 0 20px 20px 0;">
+                <div class="exp-meta" style="margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                    <span class="category" style="background: rgba(67, 56, 202, 0.1); padding: 5px 12px; border-radius: 20px; margin: 0;">Internship</span>
+                    <span class="date" style="color: var(--gray); font-weight: 700; font-size: 0.9rem;"><i class="far fa-calendar-alt"></i> Dec 2024 – Mar 2025</span>
+                </div>
+                <h3 style="font-size: 1.6rem; margin-bottom: 5px;">Research & Project Development Intern</h3>
+                <h4 class="company" style="color: var(--secondary); font-weight: 800; margin-bottom: 20px; font-size: 1.1rem;"><i class="fas fa-building"></i> Maya Labs</h4>
+                <ul class="exp-points">
+                    <li>Project Development: Built and implemented core project features using HTML, CSS, and JavaScript.</li>
+                    <li>In-depth Research: Conducted thorough technical research to support project innovation and strategy.</li>
+                    <li>Innovative Solutions: Contributed to brainstorming and creating unique solutions for technical challenges.</li>
+                    <li>Data Analysis: Analyzed complex datasets to drive informed design and development decisions.</li>
+                    <li>Technical Design: Developed research-based layouts and brochures to communicate project findings.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section alt-bg">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-showcase slide-up">
+            <div class="project-card hover-lift">
+                <div class="project-image">
+                    <img src="mockup_fish_feeder.png" alt="Automatic Fish Feeder Dashboard">
+                    <div class="project-overlay">
+                        <a href="#" class="view-btn">View <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="category">IoT / Dashboard</span>
+                    <h3>Automatic Fish Feeder</h3>
+                    <p>Designed a responsive feeding tracker dashboard with real-time charts and manual trigger controls.</p>
+                </div>
+            </div>
+            
+            <div class="project-card hover-lift">
+                <div class="project-image">
+                    <img src="mockup_maya_labs.png" alt="Maya Labs Layouts">
+                    <div class="project-overlay">
+                        <a href="https://akileshkumaruiux.github.io/front-end-project/" target="_blank" class="view-btn">View <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="category">Frontend & UI/UX</span>
+                    <h3>Maya Labs Layouts</h3>
+                    <p>Created adaptive, glassmorphic layouts to structure complex research data into clean, readable UI components.</p>
+                </div>
+            </div>
+
+            <div class="project-card hover-lift">
+                <div class="project-image">
+                    <img src="mockup_poster_design.png" alt="Poster Design">
+                    <div class="project-overlay">
+                        <a href="#" class="view-btn">View <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="category">Visual Branding</span>
+                    <h3>Event Poster Design</h3>
+                    <p>Leveraged typography and layout hierarchy to create highly engaging, neon-styled marketing materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-grid slide-up">
+            <div class="edu-card hover-lift" style="border-top: 4px solid var(--primary);">
+                <span class="category" style="background: rgba(67, 56, 202, 0.1); padding: 5px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px;">Undergraduate (UG)</span>
+                <h3 style="font-size: 1.4rem; margin-bottom: 10px;">BE Computer Science & Engineering</h3>
+                <p style="color: var(--gray);"><i class="fas fa-university"></i> Sasurie College of Engineering, Tiruppur</p><br>
+                <div class="grade" style="color: var(--primary); background: rgba(67, 56, 202, 0.05); padding: 15px; border-radius: 12px; text-align: center; border: 1px solid #e5e7eb;">
+                    <h2 style="margin: 0;">7.76 CGPA</h2>
+                </div>
+            </div>
+            <div class="edu-card hover-lift" style="border-top: 4px solid var(--secondary);">
+                <span class="category" style="background: rgba(217, 70, 239, 0.1); padding: 5px 12px; border-radius: 20px; display: inline-block; margin-bottom: 15px; color: var(--secondary) !important;">Schooling</span>
+                
+                <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Higher Secondary (HSLC) - <span style="color: var(--secondary);">72.3%</span></h3>
+                <p style="color: var(--gray); font-size: 0.9rem; margin-bottom: 20px;"><i class="fas fa-school"></i> James Memorial Metric Hr. Sec. School</p>
+                
+                <h3 style="font-size: 1.2rem; margin-bottom: 5px;">Secondary (SSLC) - <span style="color: var(--secondary);">82.6%</span></h3>
+                <p style="color: var(--gray); font-size: 0.9rem;"><i class="fas fa-school"></i> James Memorial Metric Hr. Sec. School</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section alt-bg">
+        <h2 class="section-title">Certifications</h2>
+        <div class="cert-grid slide-up">
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> Figma UI/UX Essentials – Udemy</div>
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> UI/UX Design Masterclass – Udemy</div>
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> Master UX/UI: Adobe XD – Udemy</div>
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> DevOps CI/CD – Infosys Springboard</div>
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> Claude AI – Skill Nation</div>
+            <div class="cert-item hover-lift"><i class="fas fa-certificate"></i> Faceless Content Creation AI – Udemy</div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-layout slide-up">
+            <div class="skill-group">
+                <h4 class="category">Programming</h4>
+                <div class="pills pills-3d">
+                    <div class="skill-card"><i class="fab fa-html5"></i> <span>HTML/CSS</span></div>
+                    <div class="skill-card"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+                    <div class="skill-card"><i class="fab fa-python"></i> <span>Python</span></div>
+                    <div class="skill-card"><i class="fab fa-java"></i> <span>Java</span></div>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h4 class="category">Design Tools</h4>
+                <div class="pills pills-3d">
+                    <div class="skill-card design"><i class="fab fa-figma"></i> <span>Figma</span></div>
+                    <div class="skill-card design"><i class="fas fa-pen-nib"></i> <span>Canva</span></div>
+                    <div class="skill-card design"><i class="fas fa-layer-group"></i> <span>Framer</span></div>
+                    <div class="skill-card design"><div class="xd-text" style="font-size: 2.2rem; font-weight: 900; transition: 0.5s; transform: translateZ(30px);">Xd</div> <span>Adobe XD</span></div>
+                    <div class="skill-card design"><i class="fas fa-image"></i> <span>Photoshop</span></div>
+                    <div class="skill-card design"><i class="fas fa-bezier-curve"></i> <span>Illustrator</span></div>
+                </div> 
+            </div>
+        </div>
+        <div class="lang-strip slide-up">
+            <p class="lang-title category">Spoken Languages</p>
+            <div class="lang-container">
+                <span class="lang-tag">Tamil <small>(Native)</small></span>
+                <span class="lang-tag">English <small>(Professional)</small></span>
+                <span class="lang-tag">Hindi <small>(Basic)</small></span>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="section">
+        <div class="contact-glass slide-up">
+            <h2>Get In Touch</h2>
+            <div class="contact-methods">
+                <a href="#" onclick="openGmail(event)" class="contact-btn"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://linkedin.com/in/akilesh-kumar-20961334b/" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/akileshkumaruiux" target="_blank" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="tel:+918925200917" class="contact-btn"><i class="fas fa-phone"></i> +91 89252 00917</a>
+            </div>
+            <p class="location">Nazareth, Thoothukudi, India</p>
+        </div>
+    </footer>
+
+</body>
+</html>
